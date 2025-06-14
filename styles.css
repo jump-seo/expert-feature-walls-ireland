@@ -49,7 +49,7 @@ img {
 /* Buttons */
 .cta-button {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: var(--light-color);
     padding: 12px 30px;
     border-radius: 5px;
@@ -85,7 +85,7 @@ img {
 .separator {
     width: 80px;
     height: 3px;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     margin: 0 auto;
 }
 
@@ -627,7 +627,7 @@ footer {
 
 .footer-logo h2 {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
@@ -804,6 +804,7 @@ footer {
     .about-text {
         padding-right: 0;
         margin-bottom: 40px;
+        text-align: center;
     }
     
     .value-item {
