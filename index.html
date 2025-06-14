@@ -63,7 +63,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Expert Feature Walls</h1>
+                <h1>Expert Feature Walls Ireland</h1>
             </div>
             <div class="mobile-toggle">
                 <button id="menu-toggle" aria-label="Toggle navigation menu">
@@ -158,21 +158,21 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="images/bathroom1.jpg" alt="Custom Feature Wall with TV">
+                    <img src="images/project1.jpg" alt="Custom Feature Wall with TV">
                     <div class="portfolio-overlay">
                         <h3>Media Wall Installation</h3>
                         <p>Custom built with integrated LED lighting</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/bathroom2.jpg" alt="Feature Wall with Fireplace">
+                    <img src="images/project2.jpg" alt="Feature Wall with Fireplace">
                     <div class="portfolio-overlay">
                         <h3>Feature Wall with Fireplace</h3>
                         <p>Integrated electric fireplace and storage</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/bathroom3.jpg" alt="Entertainment Unit">
+                    <img src="images/project3.jpg" alt="Entertainment Unit">
                     <div class="portfolio-overlay">
                         <h3>Entertainment Unit</h3>
                         <p>Custom built with concealed cable management</p>
@@ -214,6 +214,11 @@
                     </div>
                 </div>
             </div>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
         </div>
     </section>
 
@@ -240,11 +245,7 @@
                     </div>
                     <div class="hours">
                         <h4>Opening Hours</h4>
-                        <p>Monday: 8:00 AM - 7:00 PM</p>
-                        <p>Tuesday: 8:00 AM - 7:00 PM</p>
-                        <p>Wednesday: 8:00 AM - 7:00 PM</p>
-                        <p>Thursday: 8:00 AM - 7:00 PM</p>
-                        <p>Friday: 8:00 AM - 7:00 PM</p>
+                        <p>Mon - Fri: 8:00 AM - 7:00 PM</p>
                         <p>Saturday: 9:00 AM - 5:00 PM</p>
                         <p>Sunday: Closed</p>
                     </div>
@@ -377,6 +378,44 @@
                         this.style.visibility = 'hidden';
                     });
                 }
+            }
+            
+            // Testimonial Slider Dots
+            const slider = document.querySelector('.testimonials-slider');
+            const dots = document.querySelectorAll('.dot');
+            
+            if (slider && dots.length) {
+                dots.forEach(dot => {
+                    dot.addEventListener('click', function() {
+                        const slideIndex = this.getAttribute('data-slide');
+                        const slideWidth = slider.querySelector('.testimonial').offsetWidth + 20; // Width + margin
+                        
+                        // Scroll to the selected testimonial
+                        slider.scrollTo({
+                            left: slideWidth * slideIndex,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Update active dot
+                        dots.forEach(d => d.classList.remove('active'));
+                        this.classList.add('active');
+                    });
+                });
+                
+                // Update dots when scrolling
+                slider.addEventListener('scroll', function() {
+                    const slideWidth = slider.querySelector('.testimonial').offsetWidth + 20;
+                    const scrollPosition = slider.scrollLeft;
+                    const activeIndex = Math.round(scrollPosition / slideWidth);
+                    
+                    dots.forEach((dot, index) => {
+                        if (index === activeIndex) {
+                            dot.classList.add('active');
+                        } else {
+                            dot.classList.remove('active');
+                        }
+                    });
+                });
             }
         });
     </script>
