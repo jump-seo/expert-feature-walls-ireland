@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Feature Walls Ireland | Custom Media Walls & TV Units</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Specialists in custom-built media and feature walls with integrated niches, LED lighting, and premium finishes—typically completed within 2–3 days.">
+    <meta name="keywords" content="feature walls, media walls, TV mounting, LED lighting, custom walls, Ireland, interior design">
+    <meta name="author" content="Expert Feature Walls Ireland">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://expertfeaturewalls.ie/">
+    <meta property="og:title" content="Expert Feature Walls Ireland | Custom Media Walls & TV Units">
+    <meta property="og:description" content="Specialists in custom-built media and feature walls with integrated niches, LED lighting, and premium finishes—typically completed within 2–3 days.">
+    <meta property="og:image" content="favicon.ico">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://expertfeaturewalls.ie/">
+    <meta property="twitter:title" content="Expert Feature Walls Ireland | Custom Media Walls & TV Units">
+    <meta property="twitter:description" content="Specialists in custom-built media and feature walls with integrated niches, LED lighting, and premium finishes—typically completed within 2–3 days.">
+    <meta property="twitter:image" content="favicon.ico">  
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <!-- Fix for viewport height on mobile browsers -->
+    <script>
+        // Calculate viewport height once when the page loads
+        let vh = window.innerHeight * 0.01;
+        // Set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        
+        // No resize event listener - fixed height based on initial page load
+    </script>
+    
+    <style>
+        /* Use the custom --vh variable instead of vh units */
+        .hero {
+            height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+            height: calc(var(--vh, 1vh) * 100);
+        }
+        
+        /* Add this for any other elements that use vh units */
+        .thank-you-container {
+            height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+            height: calc(var(--vh, 1vh) * 100);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Expert Feature Walls</h1>
+            </div>
+            <div class="mobile-toggle">
+                <button id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-overlay"></div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Custom Media & Feature Walls</h2>
+                <p>Designer feature walls with integrated lighting, completed in 2-3 days</p>
+                <a href="#contact" class="cta-button">Free Quotation</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-heading">
+                <h2>About Expert Feature Walls Ireland</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Expert Feature Walls Ireland, we specialise in creating stunning custom-built media and feature walls that transform your living space. Our skilled team combines craftsmanship with innovative design to deliver premium finishes that elevate your home's interior.</p>
+                    <p>Based in Ireland, we've built our reputation on quality workmanship, attention to detail, and efficient service. Every project is completed to the highest standards, typically within just 2-3 days, minimizing disruption to your home.</p>
+                </div>
+                <div class="values">
+                    <div class="value-item">
+                        <h3>Efficiency</h3>
+                        <p>Complete installations in just 2-3 days</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Design</h3>
+                        <p>Custom designs tailored to your space and style</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Full Service</h3>
+                        <p>Electrical work, lighting, and TV mounting included</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-heading light">
+                <h2>Our Services</h2>
+                <div class="separator light"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Designer Feature Walls</h3>
+                    <p>Custom-built media and feature walls with integrated niches, LED lighting, and premium finishes—typically completed within 2–3 days.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Integrated Electrical & Lighting</h3>
+                    <p>Installation of electrical sockets, recessed LED strips, and downlights, all handled by our experienced tradesmen.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-tv"></i></div>
+                    <h3>TV Mounting & Entertainment</h3>
+                    <p>Professional TV and soundbar mounting with built-in shelving or cavities for devices like fireplaces and consoles—providing a clean, cable-free aesthetic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Recent Projects</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/bathroom1.jpg" alt="Custom Feature Wall with TV">
+                    <div class="portfolio-overlay">
+                        <h3>Media Wall Installation</h3>
+                        <p>Custom built with integrated LED lighting</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/bathroom2.jpg" alt="Feature Wall with Fireplace">
+                    <div class="portfolio-overlay">
+                        <h3>Feature Wall with Fireplace</h3>
+                        <p>Integrated electric fireplace and storage</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/bathroom3.jpg" alt="Entertainment Unit">
+                    <div class="portfolio-overlay">
+                        <h3>Entertainment Unit</h3>
+                        <p>Custom built with concealed cable management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-heading light">
+                <h2>What Our Clients Say</h2>
+                <div class="separator light"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="quote">"Absolutely delighted with our new media wall! The team at Expert Feature Walls Ireland were professional from start to finish. They completed the work in just 2 days and the quality is outstanding. The integrated lighting makes such a difference to our living room."</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Sarah O'Connor</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"We had a feature wall with fireplace installed and couldn't be happier with the result. The attention to detail was impressive, and they handled all the electrical work seamlessly. Would highly recommend to anyone looking to upgrade their living space."</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Michael Doyle</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The team did an amazing job with our entertainment unit. They were clean, efficient and the finished product looks even better than we imagined. The hidden cable management system is brilliant - no more messy wires!"</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Emma and John Murphy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Get Your Free Quotation</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ireland</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>083 486 7879</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>expertrcg@gmail.com</p>
+                    </div>
+                    <div class="hours">
+                        <h4>Opening Hours</h4>
+                        <p>Monday: 8:00 AM - 7:00 PM</p>
+                        <p>Tuesday: 8:00 AM - 7:00 PM</p>
+                        <p>Wednesday: 8:00 AM - 7:00 PM</p>
+                        <p>Thursday: 8:00 AM - 7:00 PM</p>
+                        <p>Friday: 8:00 AM - 7:00 PM</p>
+                        <p>Saturday: 9:00 AM - 5:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ExpertFeaturewallsIreland/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/expertfeaturewallsireland/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request a Free Quote</h3>
+                    <form action="https://formspree.io/f/" method="POST">
+                        <input type="hidden" name="_subject" value="New Quote Request from Expert Feature Walls Website">
+                        <input type="hidden" name="_next" value="https://expertfeaturewalls.ie/thanks.html">
+                        <!-- Honeypot field to prevent spam -->
+                        <input type="text" name="_honey" style="display:none">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="feature-wall">Designer Feature Wall</option>
+                                <option value="electrical-lighting">Integrated Electrical & Lighting</option>
+                                <option value="tv-mounting">TV Mounting & Entertainment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Expert Feature Walls</h2>
+                    <p>Custom media walls and feature walls across Ireland</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Follow us on social media for our latest projects and updates</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/ExpertFeaturewallsIreland/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/expertfeaturewallsireland/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> Expert Feature Walls Ireland. All Rights Reserved.</p>
+                <div class="attribution">
+                    <p>Website designed by <a href="https://jumpseo.ie" target="_blank" class="jumpseo-link">JumpSEO</a></p>
+                    <a href="https://www.instagram.com/jump.seo" target="_blank" class="attribution-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to update current year in the footer -->
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbar = document.getElementById('navbar');
+            const menuOverlay = document.querySelector('.menu-overlay');
+            
+            if (menuToggle && navbar) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navbar.classList.toggle('active');
+                    
+                    // Toggle overlay
+                    if (menuOverlay) {
+                        if (navbar.classList.contains('active')) {
+                            menuOverlay.style.opacity = '1';
+                            menuOverlay.style.visibility = 'visible';
+                        } else {
+                            menuOverlay.style.opacity = '0';
+                            menuOverlay.style.visibility = 'hidden';
+                        }
+                    }
+                });
+                
+                // Close menu when clicking on a nav link or overlay
+                const navLinks = navbar.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        
+                        if (menuOverlay) {
+                            menuOverlay.style.opacity = '0';
+                            menuOverlay.style.visibility = 'hidden';
+                        }
+                    });
+                });
+                
+                // Close menu when clicking on overlay
+                if (menuOverlay) {
+                    menuOverlay.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        this.style.opacity = '0';
+                        this.style.visibility = 'hidden';
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
